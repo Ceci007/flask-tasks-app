@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 900px) {
+  font-size: 50%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background: #f1f1f1;
+}
+
+.main-container {
+  width: 100rem;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+  background: #fff;
+  padding: 3rem;
+  border-radius: 1.6rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+}
+
+.task-app__title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1rem auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.8rem;
+  font-weight: 300;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background: #f1f1f1;
+  margin: 1.5rem auto;
+}
+
+.card__header {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #f1f1f1;
+  border-radius: 1rem;
+}
+
+input[type="text"] {
+  width: 40rem;
+  padding: 1.2rem 2rem;
+  margin: 0.8rem 0;
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  border-width: 1.5px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.btn {
+  border: none;
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+
+.list-group {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+.list-group__item {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+}
+
+.btn-rounded {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 0 1.5rem;
+}
+
+.svg-smaller {
+  transform: scale(0.8);
+}
+
+.btn-success {
+  color: #fff;
+  background: #3cb043;
+  font-weight: 300;
+}
+
+.btn-danger {
+  color: #fff;
+  background: #ff6347;
+  font-weight: 300;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #cfcfcf;
+}
